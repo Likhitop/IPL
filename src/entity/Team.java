@@ -14,10 +14,26 @@ public class Team {
 	
 	private boolean isQualified;
 	
+	private String shortName;
+	
+
+	
 	//setter getter
+	
 	
 	public int getId() {
 		return id;
+	}
+	@Override
+	public String toString() {
+		return "Team [id=" + id + ", teamname=" + teamname + ", captainName=" + captainName + ", coachName=" + coachName
+				+ ", nRR=" + nRR + ", isQualified=" + isQualified + ", shortName=" + shortName + "]";
+	}
+	public String getShortName() {
+		return shortName;
+	}
+	public void setShortName(String shortName) {
+		this.shortName = shortName;
 	}
 	public void setId(int id) {
 		this.id=id;
